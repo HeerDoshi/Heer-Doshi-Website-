@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalpak Doshi - Mutual Fund Distributor</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #fffefc, #fff8f0);
+      background-image: 
+        repeating-linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.3) 0,
+          rgba(255, 255, 255, 0.3) 1px,
+          transparent 1px,
+          transparent 12px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.1) 0,
+          rgba(255, 255, 255, 0.1) 1px,
+          transparent 1px,
+          transparent 12px
+        );
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #d32f2f;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ffe0b2;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #ff9800, #f44336);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section {
+      margin: 60px auto;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+
+    .btn-custom {
+      background-color: #f57c00;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #ef6c00;
+    }
+
+    footer {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 60px;
+    }
+
+    .fund-item, .type-item {
+      display: inline-block;
+      background-color: #fff8e1;
+      border: 1px solid #ffcc80;
+      border-radius: 30px;
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: 500;
+      color: #d84315;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .fund-item:hover, .type-item:hover {
+      background-color: #ffcc80;
+      color: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kalpak Doshi</h1>
+    <p>Chartered Accountant & AMFI Registered Mutual Fund Distributor</p>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#services">Services</a>
+      <a href="#funds">Fund Houses</a>
+      <a href="#types">Fund Types</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#investors">Investors</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="hero">
+    <h2>Trusted Mutual Fund Advisor</h2>
+    <p>Over 35 years of financial expertise, 20 years in mutual fund distribution</p>
+    <a href="#contact" class="btn btn-light mt-3">Get in Touch</a>
+  </div>
+
+  <main class="container">
+
+    <section id="profile">
+      <h2>My Profile</h2>
+      <p>I am a Chartered Accountant with over 35 years of experience and an AMFI Registered Mutual Fund Distributor for the past 20 years.</p>
+    </section>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Investment Planning</h5>
+              <p class="card-text" data-bs-toggle="tooltip" title="Includes SIP and lump-sum plans">
+                Tailored plans in equity and debt mutual funds based on your financial goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Review</h5>
+              <p class="card-text">Ongoing monitoring and rebalancing to ensure optimal returns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="funds">
+      <h2 class="text-center">Fund Houses</h2>
+      <div class="text-center">
+        <span class="fund-item">SBI Mutual Fund</span>
+        <span class="fund-item">ICICI Prudential</span>
+        <span class="fund-item">HDFC Mutual Fund</span>
+        <span class="fund-item">Kotak Mutual Fund</span>
+        <span class="fund-item">Birla Sun Life</span>
+        <span class="fund-item">Nippon India</span>
+        <span class="fund-item">UTI Mutual Fund</span>
+        <span class="fund-item">Axis Mutual Fund</span>
+        <span class="fund-item">Tata Mutual Fund</span>
+        <span class="fund-item">Angel One</span>
+        <span class="fund-item">Mirae Asset Mutual Fund</span>
+        <span class="fund-item">DSP Mutual Fund</span>
+        <span class="fund-item">Bandhan Mutual Fund</span>
+        <span class="fund-item">HSBC Mutual Fund</span>
+        <span class="fund-item">Invesco Mutual Fund</span>
+        <span class="fund-item">Franklin Templeton Mutual Fund</span>
+        <span class="fund-item">PPFAS Mutual Fund</span>
+        <span class="fund-item">Canara Robeco Mutual Fund</span>
+        <span class="fund-item">Edelweiss Mutual Fund</span>
+        <span class="fund-item">Quant Mutual Fund</span>
+        <span class="fund-item">Motilal Oswal Mutual Fund</span>
+        <span class="fund-item">Sundaram Mutual fund</span>
+        <span class="fund-item">Baroda BNP Paribas Mutual Fund</span>
+        <span class="fund-item">Mahindra Manulife Mutual Fund</span>
+        <span class="fund-item">LIC Mutual Fund</span>
+        <span class="fund-item">PGIM India Mutual Fund</span>
+        <span class="fund-item">Bajaj FinservMutual Fund</span>
+        <span class="fund-item">Union Mutual Fund</span>
+        <span class="fund-item">Whiteoak Mutual Fund</span>
+        <span class="fund-item">JM Financial Mutual Fund</span>
+        <span class="fund-item">360 ONE Mutual Fund</span>
+        <span class="fund-item">Bank of India Mutual Fund</span>
+        <span class="fund-item">ITI Mutual Fund</span>
+        <span class="fund-item">NJ Mutual Fund</span>
+        <span class="fund-item">Navi Mutual Fund</span>
+        <span class="fund-item">Helios Mutual Fund</span>
+        <span class="fund-item">Trust Mutual Fund</span>
+        <span class="fund-item">Samco Mutual Fund</span>
+        <span class="fund-item">Old Bridge Mutual Fund</span>
+        <span class="fund-item">Groww Bridge Mutual Fund</span>
+        <span class="fund-item">Zerodha Mutual Fund</span>
+        <span class="fund-item">Tauras Mutual Fund</span>
+        <span class="fund-item">Shriram Mutual Fund</span>
+        <span class="fund-item">Unifi Mutual Fund</span>
+      </div>
+    </section>
+
+    <section id="types">
+      <h2 class="text-center">Types of Mutual Funds</h2>
+      <h5 class="text-danger">Equity Mutual Funds</h5>
+      <div class="text-center mb-3">
+        <span class="type-item">Small Cap</span>
+        <span class="type-item">Mid Cap</span>
+        <span class="type-item">Large Cap</span>
+        <span class="type-item">Multi Cap</span>
+        <span class="type-item">Flexi Cap</span>
+        <span class="type-item">Dividend Yield</span>
+        <span class="type-item">Focused</span>
+        <span class="type-item">Thematic</span>
+        <span class="type-item">Value</span>
+        <span class="type-item">Tax Saver</span>
+      </div>
+      <h5 class="text-danger">Debt Mutual Funds</h5>
+      <div class="text-center">
+        <span class="type-item">Gilt</span>
+        <span class="type-item">Low Duration</span>
+        <span class="type-item">Money Market</span>
+        <span class="type-item">Ultra Short</span>
+        <span class="type-item">Arbitrage</span>
+        <span class="type-item">Credit Risk</span>
+        <span class="type-item">Liquid Funds</span>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <h2>Benefits of Investing</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-warning">
+            <div class="card-body">
+              <h5 class="card-title">Professional Management</h5>
+              <p class="card-text">Expertly handled by fund managers for better returns.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning">
+            <div class="card-body">
+              <h5 class="card-title">Diversification</h5>
+              <p class="card-text">Reduces risk by spreading investments across sectors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning">
+            <div class="card-body">
+              <h5 class="card-title">Liquidity</h5>
+              <p class="card-text">Withdraw or switch funds with ease at any time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="investors">
+      <h2>Eligible Investors</h2>
+      <ul>
+        <li><strong>Individuals</strong></li>
+        <li><strong>HUFs</strong></li>
+        <li><strong>Companies & Trusts</strong></li>
+        <li><strong>Minors</strong></li>
+      </ul>
+      <p><strong>KYC Required:</strong> PAN card, Aadhaar/passport, and address proof.</p>
+    </section>
+
+    <section id="calculator">
+      <h2>Investment Calculator</h2>
+      <form id="sipCalculator">
+        <div class="mb-3">
+          <label for="monthlyInvestment" class="form-label">Monthly Investment (₹)</label>
+          <input type="number" class="form-control" id="monthlyInvestment" required>
+        </div>
+        <div class="mb-3">
+          <label for="annualReturn" class="form-label">Expected Annual Return (%)</label>
+          <input type="number" class="form-control" id="annualReturn" required>
+        </div>
+        <div class="mb-3">
+          <label for="years" class="form-label">Investment Period (Years)</label>
+          <input type="number" class="form-control" id="years" required>
+        </div>
+        <button type="submit" class="btn btn-custom">Calculate</button>
+      </form>
+      <div class="mt-4" id="sipResult"></div>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+              What is a mutual fund?
+            </button>
+          </h2>
+          <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              A mutual fund is a pool of money collected from investors to invest in securities like stocks and bonds.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="q2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+              How do I start investing?
+            </button>
+          </h2>
+          <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can start investing through a KYC-verified distributor like us with a SIP or lump-sum investment.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name:</label>
+          <input type="text" id="name" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" class="form-control" required/>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message:</label>
+          <textarea id="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-custom" data-bs-toggle="popover" title="Sent!" data-bs-content="We’ll contact you soon.">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kalpak Doshi. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll fade-in
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(sec => observer.observe(sec));
+
+    // Tooltips & Popovers
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => new bootstrap.Tooltip(el));
+    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+
+    // SIP Calculator
+    document.getElementById("sipCalculator").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const monthly = parseFloat(document.getElementById("monthlyInvestment").value);
+      const rate = parseFloat(document.getElementById("annualReturn").value) / 100 / 12;
+      const months = parseFloat(document.getElementById("years").value) * 12;
+
+      if (!monthly || !rate || !months) return;
+
+      const futureValue = monthly * ((Math.pow(1 + rate, months) - 1) * (1 + rate)) / rate;
+      document.getElementById("sipResult").innerHTML = `<div class="alert alert-success">Estimated future value: ₹${futureValue.toFixed(2)}</div>`;
+    });
+
+    // Contact form
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been received.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
